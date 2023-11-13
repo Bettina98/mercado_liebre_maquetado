@@ -11,7 +11,8 @@
 }
 
 .home__header__nav {
-    margin-bottom: 15px;
+    display: none;
+    padding-bottom: 15px;
 }
 
 .home__header__nav ul {
@@ -40,8 +41,55 @@
     height: 35px;
     font-size: 20px;
     color: white;
-    margin-bottom: 15px;
+    margin: 18px;
     border-radius: 15%;
+}
+
+.home__main {
+    background-color: var(--colorGrisClaro); 
+    text-align: center;
+}
+
+.home__main div img {
+    width: 100%;
+}
+
+.home__main__section {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.home__main__section h3 {
+    padding: 15px;
+    color: var(--colorGrisOscuro);
+}
+
+.home__main__section__article {
+    padding-bottom: 20px;
+}
+.home__main__section :last-child {
+    margin: 0;
+}
+
+
+.home__main__section__article img {
+    width: 100%;
+}
+
+.home__main__section__article div {
+    border-top: 1px solid var(--colorGrisClaro);
+    padding: 15px;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.home__main__section__article div i {
+    border: 1px solid var(--colorVerde);
+    font-size: 15px;
+    padding: 10px;
+    color: var(--colorVerde);
+    border-radius: 50%;
 }
 
 .home__main__section__article--precio {
@@ -50,10 +98,17 @@
 
 .home__main__section__article--descuento {
     font-size: 16px;
+    color: var(--colorVerde);
+}
+
+.home__main__section__article h4 {
+    display: none;
+    font-weight: 400;
+    padding-top: 15px;
 }
 
 .home__footer {
-        color: var(--colorGrisOscuro);
+    color: var(--colorGrisOscuro);
 }
 
 .home__footer__section {
@@ -74,10 +129,40 @@
     color: var(--colorCeleste);
 }
 
-
-
 .home__footer__section p {
     font-size: 12px;
     margin-left: 30px;
     width: 80%;
+}
+
+@media (min-width: 768px) {
+
+    .home__header p {
+        text-align: center;
+}
+
+    .home__header__nav {
+        display: block;
+    }
+
+    .menu__burguer {
+        display: none;
+    }
+
+.home__main__section {
+    padding-bottom: 20px;
+}
+
+    .home__main__section__article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .home__main__section__article h4 {
+        display: block;
+
+    }
+}
+
+@media(min-width: 1140px) {
+
 }
