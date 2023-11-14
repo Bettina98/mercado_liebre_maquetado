@@ -1,10 +1,16 @@
 .home__header {
     background-color: var(--colorAmarillo);
 }
+
 .home__header img {
     width: 130px;
     margin: 25px 0 0 25px;
 }
+
+.home__header__buscador {
+    padding: 15px 0 0 15px;
+}
+
 .home__header p {
     font-size: 12px;
     margin: 10px 35px;
@@ -12,7 +18,6 @@
 
 .home__header__nav {
     display: none;
-    padding-bottom: 15px;
 }
 
 .home__header__nav ul {
@@ -137,19 +142,28 @@
 
 @media (min-width: 768px) {
 
+    .home__header {
+        padding-bottom: 15px;
+    }
+
+    .home__header img {
+        width: 30%;
+    }
+
     .home__header p {
         text-align: center;
 }
 
     .home__header__nav {
         display: block;
+        padding-left: 10px;
     }
 
     .menu__burguer {
         display: none;
     }
 
-.home__main__section {
+    .home__main__section {
     padding-bottom: 20px;
 }
 
