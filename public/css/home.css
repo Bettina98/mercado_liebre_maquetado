@@ -1,19 +1,47 @@
 .home__header {
     background-color: var(--colorAmarillo);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.home__header img {
-    width: 130px;
-    margin: 25px 0 0 25px;
+.home__header__logo {
+    width: 50%;
+}
+
+.home__header__logo img {
+    padding: 20px 0 15px 20px;
+    width: 95%;
 }
 
 .home__header__buscador {
-    padding: 15px 0 0 15px;
+    width: 50%;
+    margin: auto;
+}
+
+.home__header__buscador input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    position: relative;
+}
+
+.home__header__buscador button {
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: var(--colorGrisOscuro);
+    padding: 10px;
+    position: absolute;
+    right: 18px;
 }
 
 .home__header p {
     font-size: 12px;
-    margin: 10px 35px;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
 }
 
 .home__header__nav {
@@ -60,56 +88,70 @@
 }
 
 .home__main__section {
-    width: 90%;
+    width: 95%;
     margin: auto;
     margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .home__main__section h3 {
     padding: 15px;
     color: var(--colorGrisOscuro);
+    width: 100%;
+    text-align: left;
 }
+
+/*.home__main__section:last-child {
+    margin: 0;
+}*/
 
 .home__main__section__article {
-    padding-bottom: 20px;
+    margin-bottom: 15px;
+    width: 100%;
 }
-.home__main__section :last-child {
-    margin: 0;
-}
-
 
 .home__main__section__article img {
     width: 100%;
 }
 
 .home__main__section__article div {
+    display: flex;
+    flex-wrap: wrap;
     border-top: 1px solid var(--colorGrisClaro);
     padding: 15px;
     background-color: #ffffff;
     text-align: left;
+    position: relative;
 }
 
 .home__main__section__article div i {
     border: 1px solid var(--colorVerde);
     font-size: 15px;
-    padding: 10px;
+    padding: 8px;
     color: var(--colorVerde);
     border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -20px;
 }
 
 .home__main__section__article--precio {
     font-size: 18px;
+    width: 30%;
 }
 
 .home__main__section__article--descuento {
     font-size: 16px;
     color: var(--colorVerde);
+    width: 70%;
 }
 
 .home__main__section__article h4 {
-    display: none;
     font-weight: 400;
     padding-top: 15px;
+    width: 100%;
+    color: var(--colorGrisOscuro);
 }
 
 .home__footer {
@@ -146,18 +188,47 @@
         padding-bottom: 15px;
     }
 
-    .home__header img {
+    .home__header__logo {
+        width: 35%;
+    }
+
+    .home__header__buscador {
         width: 30%;
     }
 
+    .home__header__buscador input {
+        width: 95%;
+        padding: 5px;
+    }
+
+    .home__header__buscador button {
+        padding: 5px;
+        right: 37%;
+    }
+
     .home__header p {
+        width: 35%;
         text-align: center;
+        margin: auto;
 }
 
     .home__header__nav {
         display: block;
         padding-left: 10px;
+        width: 50%;
     }
+
+    .home__header__nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 0 15px;
+    }
+    
+    .home__header__nav__cuenta ul{
+        justify-content: right;
+    }
+
 
     .menu__burguer {
         display: none;
@@ -165,10 +236,17 @@
 
     .home__main__section {
     padding-bottom: 20px;
-}
+    width: 90%;
+    justify-content: space-between;
+    }
+
+    .home__main__section h3 {
+        padding: 18px 0;
+    }
 
     .home__main__section__article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
     }
 
     .home__main__section__article h4 {
@@ -179,4 +257,7 @@
 
 @media(min-width: 1140px) {
 
+    .home__main__section__article {
+        width: 20%;
+    }
 }
